@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #a57c51;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('buddhist-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+/* Chants Section (Book) */
+.book {
+    position: relative;
+    width: 60%;
+    margin: 40px auto;
+    perspective: 1000px;
+}
+
+.page {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform-origin: 0 50%;
+    transform: rotateY(0deg);
+    transition: transform 0.6s ease;
+    display: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.page h2 {
+    color: #a57c51;
+}
+
+.page p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.page.active {
+    display: block;
+    transform: rotateY(0deg);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #a57c51;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.prev {
+    left: -60px;
+}
+
+.next {
+    right: -60px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .book {
+        width: 90%;
+    }
+
+    .prev, .next {
+        display: none;
+    }
+}
