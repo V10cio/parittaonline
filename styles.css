@@ -138,4 +138,18 @@ nav ul li a {
             font-size: 1.1em;
         }
     }
-    
+    /* Footer Styling */
+footer {
+    background-color: #a57c51; /* Matches the theme color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}

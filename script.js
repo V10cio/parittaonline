@@ -10,6 +10,12 @@ function showPage(pageNumber) {
 
     // Show the selected page
     document.getElementById('page' + pageNumber).classList.add('active');
+
+    // Hide "Previous" button on the first page
+    document.querySelector('.prev').style.display = (pageNumber === 1) ? 'none' : 'inline-block';
+
+    // Hide "Next" button on the last page
+    document.querySelector('.next').style.display = (pageNumber === totalPages) ? 'none' : 'inline-block';
 }
 
 // Function to go to the previous page
