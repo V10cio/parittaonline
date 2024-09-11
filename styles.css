@@ -10,7 +10,13 @@ body {
 /* Navigation */
 header {
     background-color: #a57c51;
+    color: #ffdd44;
     padding: 10px 0;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
 }
 
 nav ul {
@@ -38,14 +44,17 @@ nav ul li a {
     background-size: cover;
 }
 
-#home h1 {
+#home h1.highlight {
     font-size: 2.5em;
-    color: #fff;
+    color: #ffd000;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
 }
 
 #home p.highlight {
     font-size: 1.2em;
-    color: #ffdd44; /* Highlight color for the sentence */
+    color: #ffdd00; /* Highlight color for the sentence */
     font-weight: bold;
 }
 
@@ -76,7 +85,7 @@ nav ul li a {
     }
     
     .page p {
-        font-size: 1.1em;
+        font-size: 1.1 em;
         line-height: 1.6;
     }
     
