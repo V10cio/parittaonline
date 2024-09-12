@@ -13,7 +13,7 @@ header {
     color: #ffdd44;
     padding: 10px 0;
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: small;
     font-style: italic;
     font-weight: bold;
@@ -48,7 +48,7 @@ nav ul li a {
     font-size: 2.5em;
     color: #ffd000;
     font-weight: bold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
 }
 
@@ -69,85 +69,85 @@ nav ul li a {
 .page {
     background-color: #fff;
     padding: 40px;
-    box-shadow: 0 4px 6px rgba(
-        0, 0, 0, 0.1);
-        display: none; /* Hide all pages by default */
-        border-radius: 5px;
-        border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide all pages by default */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.page.active {
+    display: block; /* Show only the active page */
+}
+
+.page h2 {
+    color: #a57c51;
+}
+
+.page p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Pagination (Previous/Next buttons) */
+.pagination {
+    display: flex;
+    justify-content: space-between; /* Places 'Previous' on the left and 'Next' on the right */
+    align-items: center;
+    margin: 20px 0;
+}
+
+.prev, .next {
+    background-color: #a57c51; /* Matches theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: #8d5e41; /* Darker shade on hover */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .book {
+        width: 90%;
     }
-    
-    .page.active {
-        display: block; /* Show only the active page */
-    }
-    
-    .page h2 {
-        color: #a57c51;
-    }
-    
-    .page p {
-        font-size: 1.1 em;
-        line-height: 1.6;
-    }
-    
-    /* Pagination (Previous/Next buttons) */
+
     .pagination {
-        display: flex;
-        justify-content: space-between; /* Places 'Previous' on the left and 'Next' on the right */
-        align-items: center;
-        margin: 20px 0;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
+
     .prev, .next {
-        background-color: #a57c51; /* Matches theme */
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        font-size: 1em;
-        border-radius: 3px;
-        transition: background-color 0.3s ease;
+        width: 45%; /* Adjusts width for better touch experience on mobile */
     }
-    
-    .prev:hover, .next:hover {
-        background-color: #8d5e41; /* Darker shade on hover */
+}
+
+@media screen and (max-width: 480px) {
+    .book {
+        width: 95%;
     }
-    
-    /* Responsive Styling */
-    @media screen and (max-width: 768px) {
-        .book {
-            width: 90%;
-        }
-    
-        .pagination {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
-        .prev, .next {
-            width: 45%; /* Adjusts width for better touch experience on mobile */
-        }
+
+    .prev, .next {
+        width: 45%; /* Keeps button size optimal for mobile users */
+        font-size: 0.9em;
+        padding: 10px;
     }
-    
-    @media screen and (max-width: 480px) {
-        .book {
-            width: 95%;
-        }
-    
-        .prev, .next {
-            width: 45%; /* Keeps button size optimal for mobile users */
-            font-size: 0.9em;
-            padding: 10px;
-        }
-    
-        #home h1 {
-            font-size: 2em;
-        }
-    
-        #home p.highlight {
-            font-size: 1.1em;
-        }
+
+    #home h1 {
+        font-size: 2em;
     }
-    /* Footer Styling */
+
+    #home p.highlight {
+        font-size: 1.1em;
+    }
+}
+
+/* Footer Styling */
 footer {
     background-color: #a57c51; /* Matches the theme color */
     color: white;
