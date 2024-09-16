@@ -110,7 +110,18 @@ nav ul li a {
 .prev:hover, .next:hover {
     background-color: #8d5e41; /* Darker shade on hover */
 }
+.center{
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+.roda-dharma{
+    width: 50%;
+}
+.teratai{
+    width: 55%;
 
+}
 /* Responsive Styling */
 @media screen and (max-width: 768px) {
     .book {
@@ -133,7 +144,7 @@ nav ul li a {
     }
 
     .prev, .next {
-        width: 45%; /* Keeps button size optimal for mobile users */
+        width: 100%; /* Keeps button size optimal for mobile users */
         font-size: 0.9em;
         padding: 10px;
     }
@@ -144,6 +155,9 @@ nav ul li a {
 
     #home p.highlight {
         font-size: 1.1em;
+    }
+    .roda-dharma{
+        width: 70%;
     }
 }
 
